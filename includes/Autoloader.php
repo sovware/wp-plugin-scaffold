@@ -44,7 +44,24 @@ final class Autoloader {
 		// This is conditionally redefined in Plugin::constants().
 		define( 'WP_PLUGIN_SCAFFOLD_DIR', plugin_dir_path( __DIR__ ) );
 
+		self::load_helpers();
+
 		return self::$is_loaded;
+	}
+
+	/**
+	 * Load plugin helper files when the helpers directory exists.
+	 */
+	private static function load_helpers(): void {
+		$helpers_directory = WP_PLUGIN_SCAFFOLD_DIR . 'helpers';
+
+		if ( ! is_dir( $helpers_directory ) ) {
+			return;
+		}
+
+		foreach ( glob( $helpers_directory . '/*.php' ) ?: [] as $helper_file ) {
+			require_once $helper_file; // phpcs:ignore WordPressVIPMinimum.Files.IncludingFile.UsingVariable -- Load plugin helper files.
+		}
 	}
 
 	/**
