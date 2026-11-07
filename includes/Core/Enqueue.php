@@ -17,10 +17,10 @@ class Enqueue {
 
     public function register(): void {
         wp_register_style( 'wp-plugin-scaffold-app', self::css_path( 'build/app' ), [], WP_PLUGIN_SCAFFOLD_VERSION );
-        wp_register_script( 'wp-plugin-scaffold-app', self::js_path( 'build/app' ), [], WP_PLUGIN_SCAFFOLD_VERSION, true );
+        wp_register_script( 'wp-plugin-scaffold-app', self::js_path( 'build/app' ), self::js_dependencies( 'build/app' ), WP_PLUGIN_SCAFFOLD_VERSION, true );
 
         wp_register_style( 'wp-plugin-scaffold-main', self::css_path( 'css/main' ), [], WP_PLUGIN_SCAFFOLD_VERSION );
-        wp_register_script( 'wp-plugin-scaffold-main', self::js_path( 'js/main' ), [], WP_PLUGIN_SCAFFOLD_VERSION, true );
+        wp_register_script( 'wp-plugin-scaffold-main', self::js_path( 'js/main' ), self::js_dependencies( 'js/main' ), WP_PLUGIN_SCAFFOLD_VERSION, true );
 
     }
 
@@ -52,5 +52,20 @@ class Enqueue {
     /** Return the URL for an extensionless JS path. */
     public static function js_path( string $path ): string {
         return self::path( $path . '.js' );
+    }
+
+    /** Load dependencies from the asset metadata beside an extensionless JS path. */
+    public static function js_dependencies( string $path ): array {
+        $asset_file = WP_PLUGIN_SCAFFOLD_DIR . 'assets/' . $path . '.asset.php';
+
+        if ( ! is_readable( $asset_file ) ) {
+            return [];
+        }
+
+        $asset = require $asset_file;
+
+        return is_array( $asset ) && isset( $asset['dependencies'] ) && is_array( $asset['dependencies'] )
+            ? $asset['dependencies']
+            : [];
     }
 }
