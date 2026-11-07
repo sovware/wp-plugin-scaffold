@@ -32,8 +32,8 @@
     },
     "authors": [
         {
-            "name": "Syed Galib",
-            "email": "syedgalibahmed@gmail.com"
+            "name": "SovWare",
+            "homepage": "https://github.com/sovware"
         }
     ],
     "require": {

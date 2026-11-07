@@ -460,16 +460,16 @@
     "packages-dev": [
         {
             "name": "sovware/plugin-scaffold-cli",
-            "version": "v0.1.0",
+            "version": "v0.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sovware/plugin-scaffold-cli.git",
-                "reference": "c5415ca0c7de50d24d9098709a0174ede8b94ab3"
+                "reference": "ae3afa8a71a05441e22802d24d3b4e95f96bc57b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sovware/plugin-scaffold-cli/zipball/c5415ca0c7de50d24d9098709a0174ede8b94ab3",
-                "reference": "c5415ca0c7de50d24d9098709a0174ede8b94ab3",
+                "url": "https://api.github.com/repos/sovware/plugin-scaffold-cli/zipball/ae3afa8a71a05441e22802d24d3b4e95f96bc57b",
+                "reference": "ae3afa8a71a05441e22802d24d3b4e95f96bc57b",
                 "shasum": ""
             },
             "require": {
@@ -488,12 +488,18 @@
             "license": [
                 "MIT"
             ],
+            "authors": [
+                {
+                    "name": "SovWare",
+                    "homepage": "https://github.com/sovware"
+                }
+            ],
             "description": "Interactive setup command for WP Plugin Scaffold",
             "support": {
                 "issues": "https://github.com/sovware/plugin-scaffold-cli/issues",
-                "source": "https://github.com/sovware/plugin-scaffold-cli/tree/v0.1.0"
+                "source": "https://github.com/sovware/plugin-scaffold-cli/tree/v0.1.1"
             },
-            "time": "2026-11-07T13:01:19+00:00"
+            "time": "2026-11-07T15:17:25+00:00"
         }
     ],
     "aliases": [],
