@@ -460,16 +460,16 @@
     "packages-dev": [
         {
             "name": "syedgalib/plugin-scaffold-cli",
-            "version": "v0.1.2",
+            "version": "v0.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/syedgalib/plugin-scaffold-cli.git",
-                "reference": "2bede24dd86a7c8c966adeb8c58805cc53fa0c7d"
+                "reference": "87a872f06f9f5a6e3dd67846022a677a4e06313c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/syedgalib/plugin-scaffold-cli/zipball/2bede24dd86a7c8c966adeb8c58805cc53fa0c7d",
-                "reference": "2bede24dd86a7c8c966adeb8c58805cc53fa0c7d",
+                "url": "https://api.github.com/repos/syedgalib/plugin-scaffold-cli/zipball/87a872f06f9f5a6e3dd67846022a677a4e06313c",
+                "reference": "87a872f06f9f5a6e3dd67846022a677a4e06313c",
                 "shasum": ""
             },
             "require": {
@@ -491,9 +491,9 @@
             "description": "Interactive setup command for WP Plugin Scaffold",
             "support": {
                 "issues": "https://github.com/syedgalib/plugin-scaffold-cli/issues",
-                "source": "https://github.com/syedgalib/plugin-scaffold-cli/tree/v0.1.2"
+                "source": "https://github.com/syedgalib/plugin-scaffold-cli/tree/v0.1.3"
             },
-            "time": "2026-11-07T10:37:27+00:00"
+            "time": "2026-11-07T12:17:46+00:00"
         }
     ],
     "aliases": [],
