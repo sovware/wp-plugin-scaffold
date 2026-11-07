@@ -63,6 +63,11 @@ final class Plugin {
 		}
 
 		/**
+		 * Plugin directory URL.
+		 */
+		define( 'WP_PLUGIN_SCAFFOLD_URL', plugin_dir_url( __DIR__ ) );
+
+		/**
 		 * Plugin version.
 		 */
 		define( 'WP_PLUGIN_SCAFFOLD_VERSION', Scaffold::VERSION );

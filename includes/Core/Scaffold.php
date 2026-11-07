@@ -47,7 +47,8 @@ final class Scaffold {
 	 * @internal For use by instance initialization only.
 	 */
 	public function init(): void {
-		// Initialize the services here
+		// Enqueue The Assets
+		new Enqueue();
 
 		add_action( 'init', function() {
 		    add_action( 'admin_notices', function() {
