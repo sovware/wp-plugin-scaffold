@@ -71,7 +71,6 @@ const buildIgnoreFiles = [
 	'**/.*',
 	'**/build/*.txt',
 	'**/*.map',
-	'**/assets/build/**/*-rtl.css',
 	'**/*.config',
 	'**/*.config.js',
 	'**/package.json',

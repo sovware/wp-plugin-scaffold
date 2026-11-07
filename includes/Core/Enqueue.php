@@ -16,11 +16,11 @@ class Enqueue {
     }
 
     public function register(): void {
-        wp_register_style( 'wp-plugin-scaffold-app', self::path( 'build/app.css' ), [], WP_PLUGIN_SCAFFOLD_VERSION );
-        wp_register_script( 'wp-plugin-scaffold-app', self::path( 'build/app.js' ), [], WP_PLUGIN_SCAFFOLD_VERSION, true );
+        wp_register_style( 'wp-plugin-scaffold-app', self::css_path( 'build/app' ), [], WP_PLUGIN_SCAFFOLD_VERSION );
+        wp_register_script( 'wp-plugin-scaffold-app', self::js_path( 'build/app' ), [], WP_PLUGIN_SCAFFOLD_VERSION, true );
 
-        wp_register_style( 'wp-plugin-scaffold-main', self::path( 'css/main.css' ), [], WP_PLUGIN_SCAFFOLD_VERSION );
-        wp_register_script( 'wp-plugin-scaffold-main', self::path( 'js/main.js' ), [], WP_PLUGIN_SCAFFOLD_VERSION, true );
+        wp_register_style( 'wp-plugin-scaffold-main', self::css_path( 'css/main' ), [], WP_PLUGIN_SCAFFOLD_VERSION );
+        wp_register_script( 'wp-plugin-scaffold-main', self::js_path( 'js/main' ), [], WP_PLUGIN_SCAFFOLD_VERSION, true );
 
     }
 
@@ -42,5 +42,15 @@ class Enqueue {
 
     public static function path( string $path ) {
         return WP_PLUGIN_SCAFFOLD_URL . "assets/{$path}";
+    }
+
+    /** Return the URL for an extensionless CSS path in the current text direction. */
+    public static function css_path( string $path ): string {
+        return self::path( $path . ( is_rtl() ? '-rtl' : '' ) . '.css' );
+    }
+
+    /** Return the URL for an extensionless JS path. */
+    public static function js_path( string $path ): string {
+        return self::path( $path . '.js' );
     }
 }
