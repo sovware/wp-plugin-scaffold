@@ -3,6 +3,7 @@
     "type": "project",
   	"license": "MIT",
     "scripts": {
+      "plugin:setup": "@php vendor-src/bin/plugin-scaffold-setup",
   		"setup": [
   			"composer install --no-cache",
   			"composer humbug/php-scoper",
@@ -57,5 +58,8 @@
   		"bamarni-bin": {
   			"target-directory": "vendor-src/vendor-bin"
   		}
-  	}
+	},
+    "require-dev": {
+        "syedgalib/plugin-scaffold-cli": "^0.1"
+    }
 }

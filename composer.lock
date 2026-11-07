@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5db33d239cfdc11941299dd9f3408596",
+    "content-hash": "2dcfe31f01029a5080aa8d8a605314f5",
     "packages": [
         {
             "name": "bamarni/composer-bin-plugin",
@@ -457,7 +457,45 @@
             "time": "2020-05-13T23:57:56+00:00"
         }
     ],
-    "packages-dev": [],
+    "packages-dev": [
+        {
+            "name": "syedgalib/plugin-scaffold-cli",
+            "version": "v0.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/syedgalib/plugin-scaffold-cli.git",
+                "reference": "2bede24dd86a7c8c966adeb8c58805cc53fa0c7d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/syedgalib/plugin-scaffold-cli/zipball/2bede24dd86a7c8c966adeb8c58805cc53fa0c7d",
+                "reference": "2bede24dd86a7c8c966adeb8c58805cc53fa0c7d",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.4 || ^8.0"
+            },
+            "bin": [
+                "bin/plugin-scaffold-setup"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "SyedGalib\\PluginScaffoldCli\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Interactive setup command for WP Plugin Scaffold",
+            "support": {
+                "issues": "https://github.com/syedgalib/plugin-scaffold-cli/issues",
+                "source": "https://github.com/syedgalib/plugin-scaffold-cli/tree/v0.1.2"
+            },
+            "time": "2026-11-07T10:37:27+00:00"
+        }
+    ],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {},
