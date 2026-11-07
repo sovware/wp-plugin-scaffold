@@ -1,0 +1,17 @@
+/.phpunit.cache
+/node_modules
+/vendor
+/vendor-src
+.phpunit.result.cache
+npm-debug.log
+yarn-error.log
+/.fleet
+/.idea
+/.vscode
+phpcs-report.xml
+yarn.lock
+package-lock.json
+.DS_Store
+__*
+assets/build
+/tests
