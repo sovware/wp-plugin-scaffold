@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2dcfe31f01029a5080aa8d8a605314f5",
+    "content-hash": "8f02f372739552beb1196414e1360eb9",
     "packages": [
         {
             "name": "bamarni/composer-bin-plugin",
@@ -459,17 +459,17 @@
     ],
     "packages-dev": [
         {
-            "name": "syedgalib/plugin-scaffold-cli",
-            "version": "v0.1.3",
+            "name": "sovware/plugin-scaffold-cli",
+            "version": "v0.1.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/syedgalib/plugin-scaffold-cli.git",
-                "reference": "87a872f06f9f5a6e3dd67846022a677a4e06313c"
+                "url": "https://github.com/sovware/plugin-scaffold-cli.git",
+                "reference": "c5415ca0c7de50d24d9098709a0174ede8b94ab3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/syedgalib/plugin-scaffold-cli/zipball/87a872f06f9f5a6e3dd67846022a677a4e06313c",
-                "reference": "87a872f06f9f5a6e3dd67846022a677a4e06313c",
+                "url": "https://api.github.com/repos/sovware/plugin-scaffold-cli/zipball/c5415ca0c7de50d24d9098709a0174ede8b94ab3",
+                "reference": "c5415ca0c7de50d24d9098709a0174ede8b94ab3",
                 "shasum": ""
             },
             "require": {
@@ -481,7 +481,7 @@
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "SyedGalib\\PluginScaffoldCli\\": "src/"
+                    "Sovware\\PluginScaffoldCli\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -490,10 +490,10 @@
             ],
             "description": "Interactive setup command for WP Plugin Scaffold",
             "support": {
-                "issues": "https://github.com/syedgalib/plugin-scaffold-cli/issues",
-                "source": "https://github.com/syedgalib/plugin-scaffold-cli/tree/v0.1.3"
+                "issues": "https://github.com/sovware/plugin-scaffold-cli/issues",
+                "source": "https://github.com/sovware/plugin-scaffold-cli/tree/v0.1.0"
             },
-            "time": "2026-11-07T12:17:46+00:00"
+            "time": "2026-11-07T13:01:19+00:00"
         }
     ],
     "aliases": [],

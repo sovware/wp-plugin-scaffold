@@ -3,7 +3,7 @@
 1. Create a new plugin project with Composer:
 
    ```sh
-   composer create-project syedgalib/wp-plugin-scaffold my-plugin
+   composer create-project sovware/wp-plugin-scaffold my-plugin
    ```
 
 2. Enter the project directory:

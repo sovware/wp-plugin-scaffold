@@ -8,13 +8,13 @@
  *
  * @wordpress-plugin
  * Plugin Name:       WP Plugin Scaffold
- * Plugin URI:        https://github.com/syedgalib/wp-plugin-scaffold
+ * Plugin URI:        https://github.com/sovware/wp-plugin-scaffold
  * Description:       A quick starter for WordPress plugin.
  * Version:           0.0.1
  * Requires at least: 6.9
  * Requires PHP:      7.4
  * Author:            Syed Galib Ahmed
- * Author URI:        https://github.com/syedgalib/wp-plugin-scaffold/graphs/contributors
+ * Author URI:        https://github.com/sovware/wp-plugin-scaffold/graphs/contributors
  * License:           GPLv2 or later
  * License URI:       https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  * Text Domain:       wp-plugin-scaffold

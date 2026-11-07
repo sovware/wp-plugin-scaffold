@@ -1,5 +1,5 @@
 {
-    "name": "syedgalib/wp-plugin-scaffold",
+    "name": "sovware/wp-plugin-scaffold",
     "type": "project",
   	"license": "MIT",
     "scripts": {
@@ -60,6 +60,6 @@
   		}
 	},
     "require-dev": {
-        "syedgalib/plugin-scaffold-cli": "^0.1"
+        "sovware/plugin-scaffold-cli": "^0.1"
     }
 }
