@@ -21,7 +21,6 @@ class Enqueue {
 
         wp_register_style( 'wp-plugin-scaffold-main', self::css_path( 'css/main' ), [], WP_PLUGIN_SCAFFOLD_VERSION );
         wp_register_script( 'wp-plugin-scaffold-main', self::js_path( 'js/main' ), self::js_dependencies( 'js/main' ), WP_PLUGIN_SCAFFOLD_VERSION, true );
-
     }
 
     public function admin_enqueue(): void {
