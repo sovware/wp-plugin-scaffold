@@ -18,6 +18,7 @@
  * License:           GPLv2 or later
  * License URI:       https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
  * Text Domain:       wp-plugin-scaffold
+ * Domain Path:       /languages
  */
 
 declare (strict_types = 1);

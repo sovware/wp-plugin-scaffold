@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 use Isolated\Symfony\Component\Finder\Finder;
 
-$root_directory       = __DIR__ . '/../../../';
+$root_directory       = __DIR__ . '/../../';
 $config               = require __DIR__ . '/global.config.php';
 $exclude_files_config = require __DIR__ . '/exclude.files.config.php';
 

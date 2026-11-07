@@ -70,7 +70,7 @@ final class Autoloader {
 		add_action(
 			'init',
 			static function () {
-				$error_message = __( 'WP Plugin Scaffold: The Composer autoloader was not found. If you installed the plugin from the GitHub source code, make sure to run `composer install`.', 'mcp-adapter' );
+				$error_message = __( 'WP Plugin Scaffold: The Composer autoloader was not found. If you installed the plugin from the GitHub source code, make sure to run `composer install`.', 'wp-plugin-scaffold' );
 
 				// Log a notice.
 				_doing_it_wrong(

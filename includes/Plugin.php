@@ -91,7 +91,7 @@ final class Plugin {
 			__FUNCTION__,
 			sprintf(
 			// translators: %s: Class name.
-				esc_html__( 'The %s class should not be cloned.', 'mcp-adapter' ),
+				esc_html__( 'The %s class should not be cloned.', 'wp-plugin-scaffold' ),
 				esc_html( self::class ),
 			),
 			'0.0.1'
@@ -106,7 +106,7 @@ final class Plugin {
 			__FUNCTION__,
 			sprintf(
 			// translators: %s: Class name.
-				esc_html__( 'De-serializing instances of %s is not allowed.', 'mcp-adapter' ),
+				esc_html__( 'De-serializing instances of %s is not allowed.', 'wp-plugin-scaffold' ),
 				esc_html( self::class ),
 			),
 			'0.0.1'

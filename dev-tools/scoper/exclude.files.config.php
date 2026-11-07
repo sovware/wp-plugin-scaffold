@@ -14,7 +14,7 @@ use Isolated\Symfony\Component\Finder\Finder;
 // Example of collecting files to include in the scoped build but to not scope
 // leveraging the isolated finder.
 
-// $root_directory = __DIR__ . '/../../../';
+// $root_directory = __DIR__ . '/../../';
 
 return [
     // List of excluded files, i.e. files for which the content will be left untouched.

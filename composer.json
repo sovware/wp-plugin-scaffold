@@ -14,11 +14,11 @@
   		],
       "humbug/php-scoper": "composer bin php-scoper require --dev humbug/php-scoper:0.17.5",
       "add-prefix": [
-  			"vendor-src/bin/php-scoper add-prefix --config=dev/tools/scoper/index.php --output-dir vendor --force",
+  			"vendor-src/bin/php-scoper add-prefix --config=dev-tools/scoper/index.php --output-dir vendor --force",
   			"composer dump-autoload -d vendor"
   		],
-      "format": "vendor/vendor-src/bin/phpcbf --standard=dev/tools/phpcs.xml",
-  		"phpcs": "vendor/vendor-src/bin/phpcs --standard=dev/tools/phpcs.xml",
+      "format": "vendor/vendor-src/bin/phpcbf --standard=dev-tools/phpcs.xml",
+  		"phpcs": "vendor/vendor-src/bin/phpcs --standard=dev-tools/phpcs.xml",
   		"permission": [
   			"chmod +x vendor/vendor-src/bin/phpcs",
   			"chmod +x vendor/vendor-src/bin/phpcbf"

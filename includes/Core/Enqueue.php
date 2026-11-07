@@ -36,4 +36,8 @@ class Enqueue {
     public static function path( string $path ) {
         return WP_PLUGIN_SCAFFOLD_URL . "assets/{$path}";
     }
+
+    public static function build_path( string $path ) {
+        return WP_PLUGIN_SCAFFOLD_URL . "assets/build/{$path}";
+    }
 }
