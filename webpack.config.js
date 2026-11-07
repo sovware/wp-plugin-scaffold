@@ -6,8 +6,7 @@ const devHost = 'wpmvc.test';
 module.exports = {
 	...defaultConfig,
 	entry: {
-		'js/app': './assets/src/js/main.js',
-		'css/app': './assets/src/scss/main.scss',
+		app: './assets/src/js/app.js',
 	},
 	output: {
 		path: path.resolve( __dirname, './assets/build/' ),

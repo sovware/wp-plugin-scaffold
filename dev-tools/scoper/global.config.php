@@ -17,7 +17,7 @@ return [
     // For more see: https://github.com/humbug/php-scoper/blob/master/docs/configuration.md#patchers
     'patchers'                => [
         static function ( string $file_path, string $prefix, string $contents ): string {
-            if ( realpath( $file_path ) === realpath( __DIR__ . '/../../../composer.json' ) ) {
+            if ( realpath( $file_path ) === realpath( __DIR__ . '/../../composer.json' ) ) {
                 $composer         = json_decode( $contents, true, 512, JSON_THROW_ON_ERROR );
                 $scoped_namespace = $prefix . '\\WPPluginScaffold\\';
 
